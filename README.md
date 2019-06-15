@@ -1,1 +1,1 @@
-# TrainingExamples
+Разные учебные примеры
