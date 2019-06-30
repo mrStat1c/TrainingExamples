@@ -12,7 +12,7 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
 
-//        создание кэш-менеджера, а также конфигурации дефолтного кэша
+//        СЃРѕР·РґР°РЅРёРµ РєСЌС€-РјРµРЅРµРґР¶РµСЂР°, Р° С‚Р°РєР¶Рµ РєРѕРЅС„РёРіСѓСЂР°С†РёРё РґРµС„РѕР»С‚РЅРѕРіРѕ РєСЌС€Р°
         CacheManager cacheManager = CacheManagerBuilder.newCacheManagerBuilder()
                 .withCache("preConfiguredCache",
                         CacheConfigurationBuilder.newCacheConfigurationBuilder(
@@ -21,11 +21,11 @@ public class Main {
 
         cacheManager.init();
 
-//        создание дефолтного кэша
+//        СЃРѕР·РґР°РЅРёРµ РґРµС„РѕР»С‚РЅРѕРіРѕ РєСЌС€Р°
         Cache<Integer, String> preConfiguredCache =
                 cacheManager.getCache("preConfiguredCache", Integer.class, String.class);
 
-//        создание кэша, отличного от дефолтного (конфигурируется вместимость кэша и время жизни объекта в кэше)
+//        СЃРѕР·РґР°РЅРёРµ РєСЌС€Р°, РѕС‚Р»РёС‡РЅРѕРіРѕ РѕС‚ РґРµС„РѕР»С‚РЅРѕРіРѕ (РєРѕРЅС„РёРіСѓСЂРёСЂСѓРµС‚СЃСЏ РІРјРµСЃС‚РёРјРѕСЃС‚СЊ РєСЌС€Р° Рё РІСЂРµРјСЏ Р¶РёР·РЅРё РѕР±СЉРµРєС‚Р° РІ РєСЌС€Рµ)
         int cacheSize = 5;
         int lifeTime = 5;
         Cache<Integer, String> myCache = cacheManager.createCache("myCache",
