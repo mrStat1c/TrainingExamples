@@ -1,0 +1,1 @@
+mock - сервис на WireMock
