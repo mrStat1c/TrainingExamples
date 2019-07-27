@@ -1,1 +1,1 @@
-mock - сервис на WireMock
+mock - СЃРµСЂРІРёСЃ РЅР° WireMock
