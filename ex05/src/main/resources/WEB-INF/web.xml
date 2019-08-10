@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<web-app>
+
+    <display-name>AAAAAA</display-name>
+
+
+    <!--<listener>-->
+        <!--<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>-->
+    <!--</listener>-->
+
+    <!--<context-param>-->
+        <!--<param-name>contextConfigLocation</param-name>-->
+        <!--<param-value>classpath:springContext.xml</param-value>-->
+    <!--</context-param>-->
+
+    <!--<servlet>-->
+        <!--<servlet-name>userServlet</servlet-name>-->
+        <!--<servlet-class>ru.otus.UserServlet</servlet-class>-->
+    <!--</servlet>-->
+
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>userServlet</servlet-name>-->
+        <!--<url-pattern>/admin</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <welcome-file-list>
+        <welcome-file>mainPage.html</welcome-file>
+    </welcome-file-list>
+
+</web-app>

@@ -1,0 +1,1 @@
+copy C:\IdeaProjects\TrainingExamples\ex05\target\testServlet-1.0.war C:\jetty\webapps\root.war
