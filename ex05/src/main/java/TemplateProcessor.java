@@ -13,8 +13,6 @@ public class TemplateProcessor {
     private static Map<String, String> pageVariables = new HashMap<>();
     static {
         pageVariables.put("userName", "");
-        pageVariables.put("userAge", "");
-        pageVariables.put("userCount", "");
     }
     private final Configuration configuration;
 

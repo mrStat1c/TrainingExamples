@@ -2,6 +2,8 @@ group 'ru.amelin'
 version '1.0'
 
 apply plugin: 'java'
+apply plugin: 'war'
+
 
 sourceCompatibility = 1.8
 
@@ -14,7 +16,4 @@ dependencies {
     compile group: 'org.freemarker', name: 'freemarker', version: '2.3.28'
     compile group: 'org.eclipse.jetty', name: 'jetty-server', version: '9.4.19.v20190610'
     compile group: 'org.eclipse.jetty', name: 'jetty-webapp', version: '9.4.19.v20190610'
-
-
-
 }

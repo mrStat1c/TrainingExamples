@@ -1,1 +1,1 @@
-copy C:\IdeaProjects\TrainingExamples\ex05\target\testServlet-1.0.war C:\jetty\webapps\root.war
+copy C:\IdeaProjects\TrainingExamples\ex05\build\libs\ex05-1.0.war C:\jetty\webapps\root.war
