@@ -1,3 +1,5 @@
+import org.apache.commons.io.IOUtils;
+
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -23,9 +25,13 @@ public class HelloServlet extends HttpServlet {
         requestParameters = request.getParameterMap();
         if(requestParameters.containsKey("userName")){
             String userName = requestParameters.get("userName")[0];
+//            todo не понятно, как прописать img src, чтобы она отображалась на странице
+//            String img = IOUtils.toString(HelloServlet.class.getResourceAsStream("pageTemplates/img/praisethesunner.jpg"));
+            String img = request.getContextPath() + "img/praisethesunner.jpg";
             setOK(response);
             Map<String, String> substitutes = new HashMap<>();
             substitutes.put("userName", userName);
+            substitutes.put("img", img);
             response.getWriter().println(getHelloPage(substitutes));
         } else {
             response.sendError(400, "Parameter Name not filled!");

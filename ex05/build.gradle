@@ -16,4 +16,5 @@ dependencies {
     compile group: 'org.freemarker', name: 'freemarker', version: '2.3.28'
     compile group: 'org.eclipse.jetty', name: 'jetty-server', version: '9.4.19.v20190610'
     compile group: 'org.eclipse.jetty', name: 'jetty-webapp', version: '9.4.19.v20190610'
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
 }
