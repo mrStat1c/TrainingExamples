@@ -1,4 +1,4 @@
-group 'ru.otus'
+group 'ru.amelin'
 version '1.0'
 
 apply plugin: 'java'

@@ -1,0 +1,30 @@
+<configuration>
+    <appender class="ch.qos.logback.core.ConsoleAppender" name="STDOUT">
+        <encoder>
+            <pattern>| %-31.-31(%d{HH:mm:ss.SSS} | %thread) | %-40.-40(%-5level | %logger{0}) | %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender class="ch.qos.logback.classic.sift.SiftingAppender" name="SIFT">
+        <discriminator>
+            <key>mdc</key>
+            <defaultValue>common</defaultValue>
+        </discriminator>
+        <sift>
+            <appender class="ch.qos.logback.core.FileAppender" name="FILE-${mdc}">
+                <file>build/log/${mdc}.log</file>
+                <encoder>
+                    <pattern>| %-31.-31(%d{HH:mm:ss.SSS} | %thread) | %-40.-40(%-5level | %logger{0}) | %msg%n</pattern>
+                </encoder>
+            </appender>
+        </sift>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="SIFT"/>
+    </root>
+
+    <logger name="/" level="OFF"/>
+
+</configuration>
