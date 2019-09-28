@@ -17,7 +17,7 @@ public class Main {
             );
 
         } catch (Exception e) {
-            System.out.println("Ошибка при подключении к бд:\n" + e.getMessage());
+            System.out.println("РћС€РёР±РєР° РїСЂРё РїРѕРґРєР»СЋС‡РµРЅРёРё Рє Р±Рґ:\n" + e.getMessage());
         }
 
         Db db = new Db(connection);
