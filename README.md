@@ -13,3 +13,5 @@ ex05 - Пример сервлета на war и внешнем web-сервер
 ex06 - Udp Server
 
 ex07 - Работа с бд с помощью JOOQ
+
+ex08 - ResourceUtil
