@@ -15,3 +15,5 @@ ex06 - Udp Server
 ex07 - Работа с бд с помощью JOOQ
 
 ex08 - ResourceUtil
+
+ex09 - Apache Http Client
