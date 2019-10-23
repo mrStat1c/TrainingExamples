@@ -14,6 +14,7 @@ import org.apache.http.impl.auth.BasicScheme;
 import org.apache.http.impl.client.BasicCredentialsProvider;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.util.EntityUtils;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -30,7 +31,7 @@ public class Main {
         getRequest.setHeader(HttpHeaders.CONTENT_TYPE, "text/html");
         HttpResponse httpResponse = httpClient.execute(getRequest);
         System.out.println("Response Status: " + httpResponse.getStatusLine().getStatusCode());
-        System.out.println("Response Body: " + httpResponse.getEntity().getContent());//inputStream
+        System.out.println("Response Body: " + EntityUtils.toString(httpResponse.getEntity()));
 
 //      GET with authentification
         CredentialsProvider provider = new BasicCredentialsProvider();
