@@ -14,8 +14,8 @@ import java.util.stream.Collectors;
 @Slf4j
 public class ResourceUtil {
     /**
-     * @param path путь до файла от директории main/resources
-     * @return содержимое файла
+     * @param path РїСѓС‚СЊ РґРѕ С„Р°Р№Р»Р° РѕС‚ РґРёСЂРµРєС‚РѕСЂРёРё main/resources
+     * @return СЃРѕРґРµСЂР¶РёРјРѕРµ С„Р°Р№Р»Р°
      */
     public static String readResourceToString(String path) {
         try (Reader in = new InputStreamReader(
@@ -29,8 +29,8 @@ public class ResourceUtil {
     }
 
     /**
-     * @param dirPath путь до директории от директории main/resources
-     * @return список путей всех найденных в директории файлов (пути начинаются от директории main/resources)
+     * @param dirPath РїСѓС‚СЊ РґРѕ РґРёСЂРµРєС‚РѕСЂРёРё РѕС‚ РґРёСЂРµРєС‚РѕСЂРёРё main/resources
+     * @return СЃРїРёСЃРѕРє РїСѓС‚РµР№ РІСЃРµС… РЅР°Р№РґРµРЅРЅС‹С… РІ РґРёСЂРµРєС‚РѕСЂРёРё С„Р°Р№Р»РѕРІ (РїСѓС‚Рё РЅР°С‡РёРЅР°СЋС‚СЃСЏ РѕС‚ РґРёСЂРµРєС‚РѕСЂРёРё main/resources)
      */
     public static List<String> getFileListFromDirectory(String dirPath) {
         File[] files = new File(ResourceUtil.class.getResource(dirPath).getFile()).listFiles();
