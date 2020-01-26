@@ -17,3 +17,5 @@ ex07 - Работа с бд с помощью JOOQ
 ex08 - ResourceUtil
 
 ex09 - Apache Http Client
+
+ex10 - Scenario Context
