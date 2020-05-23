@@ -19,3 +19,5 @@ ex08 - ResourceUtil
 ex09 - Apache Http Client
 
 ex10 - Scenario Context
+
+ex11 - Работа с потоками (Dange)
