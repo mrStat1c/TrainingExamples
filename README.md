@@ -23,3 +23,5 @@ ex10 - Scenario Context
 ex11 - Работа с потоками (Dange)
 
 ex12 - Работа с Json и Xml
+
+ex13 - Пример реализации Callable, Future и Executor
