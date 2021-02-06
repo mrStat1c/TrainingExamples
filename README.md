@@ -27,3 +27,5 @@ ex12 - Работа с Json и Xml
 ex13 - Пример реализации Callable, Future и Executor
 
 ex14 - Xml marshalling / unmarshalling
+
+ex15 - Работа с Gson. Реализация TypeAdapter
